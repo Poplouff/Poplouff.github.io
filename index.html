@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferran Paul — Développeur C++, c#, Unity et Unreal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="stars-canvas"></canvas>
+
+    <nav class="nav">
+        <div class="nav-logo">Ferran Paul</div>
+        <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <!-- PHOTO DE PROFIL : Décommenter et ajouter ton image -->
+            <!-- <img src="photo-profil.jpg" alt="Ferran Paul" class="hero-avatar"> -->
+
+            <p class="hero-eyebrow">Développeur Gameplay</p>
+            <h1>
+                Je développe des <span class="highlight-teal">outils</span><br>
+                au service d'architectures <span class="highlight">solides</span>.
+            </h1>
+            <p class="hero-subtitle">
+                Tools
+                <span>·</span>
+                Architecture Complexe
+                <span>·</span>
+                Unity / C#
+            </p>
+            <a href="#projects" class="btn-primary">
+                Voir mes projets
+                <span class="btn-arrow">→</span>
+            </a>
+        </div>
+        <div class="scroll-hint">
+            <div class="scroll-line"></div>
+            Défiler
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <p class="section-label">01 — À propos</p>
+        <h2>Mon <span class="accent">parcours</span></h2>
+        <p>
+            Actuellement étudiant en 3ème année de <span class="highlight">Bachelor Développeur Informatique, option Jeux Vidéo</span>
+            au Gaming Campus (Lyon), je me spécialise dans le développement de tools et d'architectures.
+        </p>
+        <p>
+            Je m'oriente vers un développement plus systémique, où les outils, les règles
+            et les différentes briques du projet sont pensés pour fonctionner ensemble durablement,
+            plutôt que comme une accumulation de scripts isolés.
+        </p>
+
+        <div class="formation-card">
+            <div class="formation-icon">🎓</div>
+            <div class="formation-content">
+                <h3>Gaming Campus — Lyon</h3>
+                <p class="formation-years">2023 — 2026</p>
+                <p class="formation-degree">En cours - Bachelor Développeur Informatique, option Jeux Vidéo</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section dark-section">
+        <p class="section-label">02 — Compétences</p>
+        <h2>Stack <span class="accent">technique</span></h2>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programmation</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">C++</span>
+                    <span class="skill-tag secondary">C#</span>
+                    <span class="skill-tag secondary">Python</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Game Engines</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">Unity</span>
+                    <span class="skill-tag secondary">Unreal Engine</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Outils & Workflow</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">Git / GitHub</span>
+                    <span class="skill-tag">Miro</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Spécialités</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag highlight">Architecture</span>
+                    <span class="skill-tag highlight">Gameplay</span>
+                    <span class="skill-tag highlight">Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <p class="section-label">03 — Réalisations</p>
+        <h2>Projets <span class="accent">développés</span></h2>
+
+        <div class="projects-list">
+
+            <!-- Projet 1 : decouverte de Unreal-->
+            <div class="project">
+                <span class="project-num">01</span>
+                <div class="project-body">
+                    <div class="project-header">
+                        <div>
+                            <h3>decouverte de Unreal</h3>
+                            <div class="project-meta">
+                                <span class="meta-badge">2 semaine</span>
+                                <span class="meta-badge">Équipe de 2</span>
+                                <span class="meta-badge">Unreal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        decouverte de Unreal avec objectif de faire un jeu d'enigme
+                    </p>
+                    <p class="project-role">
+                        <strong>Mon rôle :</strong> Gestions des portails et level design
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Unreal</span>
+                        <span class="tag">Logique</span>
+                        <span class="tag">C++</span>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel" data-index="0">
+                            <div class="carousel-track">
+                                <img src="images/Portal1.png" alt="image1">
+                                <img src="images/Portal2.png" alt="image2">
+                                <img src="images/Portal3.png" alt="image3">
+                            </div>
+                            <button class="carousel-btn prev" aria-label="Précédent">‹</button>
+                            <button class="carousel-btn next" aria-label="Suivant">›</button>
+                            <div class="carousel-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <a class="carousel-github" href="https://github.com/Poplouff/Decouverte-Unreal" target="_blank" rel="noopener noreferrer" title="Voir sur GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 : Room Defenders -->
+            <div class="project">
+                <span class="project-num">02</span>
+                <div class="project-body">
+                    <div class="project-header">
+                        <div>
+                            <h3>Room Defenders</h3>
+                            <div class="project-meta">
+                                <span class="meta-badge">2 mois</span>
+                                <span class="meta-badge">4 tech + 2 art</span>
+                                <span class="meta-badge">Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Prototype de hero shooter multijoueur. Deux personnages jouables dotés d'un grappin
+                        et d'attaques distinctes doivent éliminer les ennemis qui progressent vers le core du château.
+                    </p>
+                    <p class="project-role">
+                        <strong>Mon rôle :</strong> System de grapin, mouvement des personnages et de System de tire 
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">Multijoueur</span>
+                        <span class="tag">C#</span>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel" data-index="0">
+                            <div class="carousel-track">
+                                <img src="images/RoomDefendersRobobastos.png" alt="Robobastos">
+                                <img src="images/RoomDefendersGlocktopus.png" alt="Glocktopus">
+                                <img src="images/RoomDefendersGrappin.png" alt="Grappin">
+                            </div>
+                            <button class="carousel-btn prev" aria-label="Précédent">‹</button>
+                            <button class="carousel-btn next" aria-label="Suivant">›</button>
+                            <div class="carousel-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <a class="carousel-github" href="https://github.com/Lukas-Beden/Room-Defenders" target="_blank" rel="noopener noreferrer" title="Voir sur GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 : Shader -->
+            <div class="project">
+                <span class="project-num">03</span>
+                <div class="project-body">
+                    <div class="project-header">
+                        <div>
+                            <h3>Shader</h3>
+                            <div class="project-meta">
+                                <span class="meta-badge">1 semaine</span>
+                                <span class="meta-badge">Équipe de 2</span>
+                                <span class="meta-badge">Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        l'objectif etait de produire un jeu avec un gameplay leger pour en contre partie avoir un nombre de shader correct et un jeu polish
+                    </p>
+                    <p class="project-role">
+                        <strong>Mon rôle :</strong> gameplay / polish ainsi que quelques shader
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">shader-graph</span>
+                        <span class="tag">C#</span>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel" data-index="0">
+                            <div class="carousel-track">
+                                <img src="images/Shader1.png" alt="Menu">
+                                <img src="images/Shader2.png" alt="sword slash">
+                                <img src="images/Shader3.png" alt="stop time">
+                                <img src="images/Shader4.png" alt="running tornado">
+                            </div>
+                            <button class="carousel-btn prev" aria-label="Précédent">‹</button>
+                            <button class="carousel-btn next" aria-label="Suivant">›</button>
+                            <div class="carousel-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <a class="carousel-github" href="https://github.com/Poplouff/Project-Shader" target="_blank" rel="noopener noreferrer" title="Voir sur GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 4 : GPC -->
+            <div class="project">
+                <span class="project-num">04</span>
+                <div class="project-body">
+                    <div class="project-header">
+                        <div>
+                            <h3>Projet de fin d'étude</h3>
+                            <div class="project-meta">
+                                <span class="meta-badge">1 mois et 2 semaine</span>
+                                <span class="meta-badge">8 tech + 6 art + 3 buiseness + 2 TV</span>
+                                <span class="meta-badge">Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        dans ce jeu nous incarnons un bookinist qui s'occupe d'une librairie dans MontMartre.
+                        nous devions prouire un jeu en equipe nombreuse pour la fin de notre liscence.
+                    </p>
+                    <p class="project-role">
+                        <strong>Mon rôle :</strong> Realisation des system / mise en place des enigmes 
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">System</span>
+                        <span class="tag">C#</span>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel" data-index="0">
+                            <div class="carousel-track">
+                                <img src="images/GPC1.png" alt="Menu">
+                                <img src="images/GPC2.png" alt="Enigme 1">
+                                <img src="images/GPC3.png" alt="Enigme 2">
+                            </div>
+                            <button class="carousel-btn prev" aria-label="Précédent">‹</button>
+                            <button class="carousel-btn next" aria-label="Suivant">›</button>
+                            <div class="carousel-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <a class="carousel-github" href="https://github.com/Poplouff/Project-Shader" target="_blank" rel="noopener noreferrer" title="Voir sur GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <p class="section-label">04 — Contact</p>
+        <h2>Restons en <span class="accent">contact</span></h2>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p class="contact-intro">
+                    Actuellement à la recherche d'une <span class="highlight">alternance de 2 ans</span> dans le développement de jeux vidéo.
+                </p>
+                <p class="contact-location">
+                    📍 Lyon, France
+                </p>
+
+                <div class="contact-methods">
+                    <a href="mailto:paulferran102004@gmail.com" class="contact-method">
+                        <span class="contact-icon">📧</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">paulferran102004@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+33687876897" class="contact-method">
+                        <span class="contact-icon">📱</span>
+                        <div class="contact-details">
+                            <span class="contact-label">Téléphone</span>
+                            <span class="contact-value">06 87 87 68 97</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Poplouff" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <span class="contact-icon">💻</span>
+                        <div class="contact-details">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/poplouff</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/paul-ferran-4390b33b6/" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <span class="contact-icon">💼</span>
+                        <div class="contact-details">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">Paul Ferran</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <a href="mailto:paulferran102004@gmail.com" class="btn-primary btn-large">
+                    Me contacter
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="CV_Paul_FERRAN" download class="btn-secondary btn-large">
+                    Télécharger mon CV
+                    <span class="btn-arrow">↓</span>
+                </a>
+                <!-- <a href="CV_Paul_FERRANf" download class="btn-secondary btn-large">
+                    Télécharger ma lettre de motivation
+                    <span class="btn-arrow">↓</span>
+                </a> -->
+                <p class="contact-note">Ouvert aux opportunités d'alternance</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 — Paul Ferran · Développeur Gameplay & Architecture</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        /* ── Carousels ───────────────────────────────────────── */
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            const track = carousel.querySelector('.carousel-track');
+            const dots = carousel.querySelectorAll('.dot');
+            const images = carousel.querySelectorAll('img');
+            let current = 0;
+
+            function goTo(index) {
+                current = (index + images.length) % images.length;
+                track.style.transform = `translateX(-${current * 100}%)`;
+                dots.forEach((d, i) => d.classList.toggle('active', i === current));
+            }
+
+            carousel.querySelector('.prev').addEventListener('click', e => {
+                e.preventDefault(); e.stopPropagation();
+                goTo(current - 1);
+            });
+            carousel.querySelector('.next').addEventListener('click', e => {
+                e.preventDefault(); e.stopPropagation();
+                goTo(current + 1);
+            });
+            dots.forEach((dot, i) => dot.addEventListener('click', e => {
+                e.preventDefault(); e.stopPropagation();
+                goTo(i);
+            }));
+
+            // Swipe tactile
+            let startX = 0;
+            carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+            carousel.addEventListener('touchend', e => {
+                const diff = startX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+            });
+        });
+    </script>
+</body>
+</html>
