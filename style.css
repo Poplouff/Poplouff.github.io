@@ -18,3 +18,67 @@
 .language-button[aria-pressed="true"]{font-weight:700}
 @media(max-width:680px){.header-inner{gap:12px;flex-wrap:wrap;padding-block:10px}.header-inner nav{gap:13px}.language-switch{padding-left:8px;gap:2px}.language-button{padding:5px 3px}}
 @media(max-width:390px){.header-inner nav{order:3;width:100%;justify-content:center;margin-left:0}.language-switch{margin-left:auto}.header-inner{row-gap:4px}}
+
+/* Navigation mobile : identité et langues sur la première ligne,
+   liens de navigation sur la seconde. */
+@media (max-width: 680px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "brand language" "nav nav";
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 8px;
+    padding-block: 12px 10px;
+  }
+  .brand {
+    grid-area: brand;
+    white-space: nowrap;
+    font-size: 1.06rem;
+    letter-spacing: -.035em;
+    min-width: 0;
+  }
+  .language-switch {
+    grid-area: language;
+    justify-self: end;
+    margin: 0;
+    padding: 2px;
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--surface);
+    white-space: nowrap;
+    font-size: .76rem;
+  }
+  .language-switch > span { display: none; }
+  .language-button {
+    min-width: 40px;
+    padding: 6px 9px;
+    border-radius: 4px;
+    font-size: .76rem;
+    line-height: 1.25;
+  }
+  .language-button[aria-pressed="true"] {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .site-header nav,
+  .header-inner nav {
+    grid-area: nav;
+    order: initial;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding-top: 7px;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .site-header nav a { font-size: .84rem; padding: 2px 0; }
+  html { scroll-padding-top: 108px; }
+}
+@media (max-width: 390px) {
+  .header-inner nav { order: initial; margin: 0; }
+  .language-switch { margin: 0; }
+  .brand { font-size: 1rem; }
+}
